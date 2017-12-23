@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MikihahaCamera</string>
+    <string name="confirm_check">要保留吗？</string>
+    <string name="confirm_done">拍照已完成</string>
+</resources>

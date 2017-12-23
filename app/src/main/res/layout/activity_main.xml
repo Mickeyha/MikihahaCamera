@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/capturing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:visibility="invisible" />
+
+    <com.example.mickey.mikihahacamera.view.OneFaceView
+        android:id="@+id/faceMask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rv_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_timer"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/selector_button_timer"
+                android:background="#00000000"
+                android:layout_marginLeft="257dp"
+                android:layout_marginTop="430dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_shot"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@mipmap/bt_camera_shot_normal"
+                android:background="#00000000"
+                android:layout_marginLeft="447dp"
+                android:layout_marginTop="420dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_face"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/selector_button_face"
+                android:background="#00000000"
+                android:layout_marginLeft="657dp"
+                android:layout_marginTop="430dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/selector_button_close"
+                android:background="#00000000"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="35dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_check"
+                android:textSize="52sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="0.08"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/selector_button_confirm"
+                android:background="#00000000"
+                android:layout_marginLeft="447dp"
+                android:layout_marginTop="420dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/selector_button_back"
+                android:background="#00000000"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="35dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
